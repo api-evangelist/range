@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: derived
+source: https://www.range.co/docs/api
+note: Entity graph derived from the documented Range API v1 resource surface (no OpenAPI
+  published). id-prefixes/domains not documented.
+entities:
+- name: Team
+  operations:
+  - GET /v1/teams
+  - GET /v1/teams/{team_id}
+  - POST /v1/teams
+- name: User
+  operations:
+  - GET /v1/users/{user_id}
+  - GET /v1/users/auth-user
+  - GET /v1/users/find
+  - PUT /v1/users/{user_id}/profile
+  - PUT /v1/users/{user_id}/state
+- name: Update
+  aliases:
+  - Check-in
+  operations:
+  - GET /v1/updates
+- name: Activity
+  operations:
+  - POST /v1/activity
+relationships:
+- from: Team
+  to: User
+  kind: has_many
+  via: relations
+  evidence: PUT/DELETE /v1/teams/{team_id}/relations/{user_id}
+- from: User
+  to: Team
+  kind: belongs_to
+  via: relations
+- from: Update
+  to: User
+  kind: belongs_to
+  via: author
+  evidence: Updates (check-ins) are authored by a user.
+- from: Activity
+  to: User
+  kind: belongs_to
+  via: user

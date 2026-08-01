@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/range-sdk
+packages:
+- language: javascript
+  registry: npm
+  name: range-sdk
+  url: https://www.npmjs.com/package/range-sdk
+  install: npm install range-sdk --save
+  version: 1.6.0
+  repository: https://github.com/range-labs/range-node
+  official: true
+  note: Official Node.js library for the Range API, published by Range Labs (maintainers
+    include dpup / range-labs staff). Auth via RANGE_ACCESS_KEY env var or constructor
+    argument.
+# Range docs list Go and Python SDKs as "coming soon" — not yet published to a registry.

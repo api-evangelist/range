@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+source: https://www.range.co/security
+url: https://www.range.co/security
+certifications:
+- SOC 2
+- GDPR
+- CCPA
+compliance_notes: Range is GDPR- and CCPA-compliant. SOC 1/2/3 certifications apply
+  to the underlying AWS hosting infrastructure (per the Range security page), not a
+  Range-issued SOC 2 report. Customer data is encrypted at rest and in transit.
+evidence:
+- source: https://www.range.co/security
+  keywords:
+  - soc 2
+  - gdpr
+  - ccpa

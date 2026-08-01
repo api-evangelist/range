@@ -1,8 +1,14 @@
 aid: range
 name: Range
-description: Range is a company surfaced as a portfolio company of bloomberg-beta, scale-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Range is team-communication and collaboration software from Range Labs that
+  centralizes how teams stay in sync. It replaces status meetings with asynchronous daily
+  check-ins, runs meetings with shared agendas and notes, tracks OKRs and goals against
+  daily work, and provides a team directory, connecting to 75+ workplace tools including
+  Slack, Microsoft Teams, Zoom, GitHub, Jira, Asana, and Google Workspace. Range publishes
+  a JSON-over-REST API (base https://api.range.co/v1) for managing Teams, Users, and
+  Check-ins (Updates), authenticated with API keys over HTTP Basic or OAuth 2.0 bearer
+  tokens, plus an official Node.js SDK (range-sdk). It is backed by Bloomberg Beta and
+  Scale Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/range/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +17,44 @@ x-backed-by:
 - scale-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://www.range.co/img/apple-icon.png
 tags:
 - Company
-apis: []
+- Team Collaboration
+- Async Communication
+- Standups
+- Check-ins
+- Meetings
+- Goals
+- OKRs
+- Productivity
+- Workplace
+apis:
+- name: Range API
+  description: JSON-over-REST API for managing Range Teams, Users, and Check-ins (Updates).
+    API-key (HTTP Basic) or OAuth 2.0 bearer authentication; HTTPS/TLS 1.2+ required.
+  humanURL: https://www.range.co/docs/api
+  baseURL: https://api.range.co/v1
+  properties:
+  - type: Documentation
+    url: https://www.range.co/docs/api
+  - type: Authentication
+    url: authentication/range-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +63,62 @@ maintainers:
 common:
 - type: Website
   url: https://www.range.co/
+- type: DeveloperPortal
+  url: https://www.range.co/docs/api
+- type: Documentation
+  url: https://www.range.co/docs/api
+- type: APIReference
+  url: https://www.range.co/docs/api
+- type: GettingStarted
+  url: https://www.range.co/docs/api
+- type: Blog
+  url: https://www.range.co/blog
+- type: Support
+  url: https://www.range.co/help
+- type: GitHubOrganization
+  url: https://github.com/range-labs
+- type: Pricing
+  url: https://www.range.co/pricing
+- type: SignUp
+  url: https://range.co/signup
+- type: Login
+  url: https://app.range.co
+- type: TermsOfService
+  url: https://policy.range.co/
+- type: PrivacyPolicy
+  url: https://policy.range.co/
+- type: StatusPage
+  url: https://range.statuspage.io/
+- type: Packages
+  url: packages/range-packages.yml
+- type: SDKs
+  url: packages/range-packages.yml
+- type: Authentication
+  url: authentication/range-authentication.yml
+- type: Conventions
+  url: conventions/range-conventions.yml
+- type: Lifecycle
+  url: lifecycle/range-lifecycle.yml
+- type: Conformance
+  url: conformance/range-conformance.yml
+- type: Compliance
+  url: https://www.range.co/security
+- type: DataModel
+  url: data-model/range-data-model.yml
+- type: MCPServer
+  url: mcp/range-mcp.yml
+- type: LLMsTxt
+  url: llms/range-llms.txt
+- type: DomainSecurity
+  url: security/range-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/range-vulnerability-disclosure.yml
+- type: Security
+  url: https://policy.range.co/disclosure.html
+- type: TrustCenter
+  url: security/range-trust-center.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

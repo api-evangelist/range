@@ -1,0 +1,29 @@
+# Range
+
+> Range is team-communication and collaboration software that centralizes workplace updates: async check-ins (replacing standups), meeting agendas and notes, OKR/goal tracking, and a team directory, with 75+ integrations (Slack, Microsoft Teams, Zoom, GitHub, Jira, Asana, Google Workspace). Built by Range Labs. The Range API is a JSON-over-REST interface for managing Teams, Users, and Check-ins (Updates).
+
+## API
+- [Range API v1 (docs)](https://www.range.co/docs/api): JSON-REST API at base URL https://api.range.co/v1. Auth via API key (HTTP Basic, key as username) or OAuth 2.0 bearer (closed program). HTTPS/TLS 1.2+ required.
+
+## SDKs
+- [range-sdk (npm)](https://www.npmjs.com/package/range-sdk): Official Node.js library for the Range API. `npm install range-sdk --save`.
+- [range-labs/range-node (GitHub)](https://github.com/range-labs/range-node): Source for the Node.js SDK. Go and Python SDKs listed as coming soon.
+
+## Developer
+- [Integrations](https://www.range.co/product/integrations): 75+ workplace-tool integrations.
+- [App Directory](https://www.range.co/apps)
+- [GitHub Organization](https://github.com/range-labs)
+- [Help Center](https://www.range.co/help)
+- [Blog](https://www.range.co/blog)
+- [Status](https://range.statuspage.io/)
+
+## Security
+- [Security & Compliance](https://www.range.co/security): GDPR & CCPA compliant; hosted on SOC 1/2/3-certified AWS infrastructure; data encrypted at rest and in transit.
+- [Responsible Disclosure](https://policy.range.co/disclosure.html): report vulnerabilities to security@range.co.
+- [Bug Bounty / Hall of Fame](https://www.range.co/security/bounty)
+
+## Company
+- [Pricing](https://www.range.co/pricing): freemium, free tier available.
+- [Sign Up](https://range.co/signup)
+- [Sign In](https://app.range.co)
+- [Terms & Privacy](https://policy.range.co/)

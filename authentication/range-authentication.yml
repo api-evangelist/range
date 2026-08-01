@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.range.co/docs/api
+docs: https://www.range.co/docs/api
+summary:
+  types:
+  - http
+  - oauth2
+  api_key_in:
+  - header   # HTTP Basic Authorization header (API key as username, blank password)
+  oauth2_flows:
+  - authorizationCode
+schemes:
+- name: apiKeyBasic
+  type: http
+  scheme: basic
+  description: API keys are created in Range developer settings and passed via HTTP
+    Basic authentication — the API key is supplied as the username and the password
+    is left blank. All requests must be made over HTTPS with TLS 1.2 or higher.
+  sources:
+  - https://www.range.co/docs/api
+- name: oauthBearer
+  type: oauth2
+  scheme: bearer
+  description: OAuth 2.0 bearer tokens are supported through a currently closed program;
+    access must be requested from the Range support team.
+  status: closed-program
+  sources:
+  - https://www.range.co/docs/api

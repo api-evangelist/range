@@ -1,0 +1,46 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: https://www.range.co/docs/api
+note: No official hosted/remote Range MCP server located. Candidate tool list derived
+  from the documented Range API v1 operations.
+server:
+  name: range
+  transport: http
+tools:
+- name: list_teams
+  description: List teams.
+  source_operation: GET /v1/teams
+- name: read_team
+  description: Read a team's details.
+  source_operation: GET /v1/teams/{team_id}
+- name: create_team
+  description: Create a team.
+  source_operation: POST /v1/teams
+- name: update_team_relation
+  description: Add or update a user's membership in a team.
+  source_operation: PUT /v1/teams/{team_id}/relations/{user_id}
+- name: delete_team_relation
+  description: Remove a user from a team.
+  source_operation: DELETE /v1/teams/{team_id}/relations/{user_id}
+- name: read_user
+  description: Read a user.
+  source_operation: GET /v1/users/{user_id}
+- name: get_authenticated_user
+  description: Get the currently authenticated user.
+  source_operation: GET /v1/users/auth-user
+- name: find_user
+  description: Find a user by email or provider identity.
+  source_operation: GET /v1/users/find
+- name: update_user_profile
+  description: Update a user's profile.
+  source_operation: PUT /v1/users/{user_id}/profile
+- name: update_user_state
+  description: Update a user's state.
+  source_operation: PUT /v1/users/{user_id}/state
+- name: list_updates
+  description: List check-in updates.
+  source_operation: GET /v1/updates
+- name: record_activity
+  description: Record an interaction / activity.
+  source_operation: POST /v1/activity

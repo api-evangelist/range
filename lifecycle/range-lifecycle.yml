@@ -1,0 +1,11 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.range.co/docs/api
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://www.range.co/docs/api
+status_page: https://range.statuspage.io/
+deprecation: null   # No published deprecation / Sunset-header policy located.
+sla: null           # No public SLA / uptime target located.
+deprecated_operations: []

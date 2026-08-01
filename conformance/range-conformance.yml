@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: derived
+source: https://www.range.co/docs/api
+standards:
+- id: oauth2
+  conforms: true
+  evidence: OAuth 2.0 bearer tokens supported via a closed access program (docs/api).
+- id: tls1.2
+  conforms: true
+  evidence: All API requests must be made over HTTPS with TLS 1.2 or higher.
+- id: rest-json
+  conforms: true
+  evidence: JSON-over-REST interface, application/json request/response, ISO8601 UTC dates.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error envelope documented.
+- id: oidc
+  conforms: false
+- id: scim
+  conforms: false

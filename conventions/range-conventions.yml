@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.range.co/docs/api
+authentication:
+  style: http-basic-api-key
+  detail: API key as HTTP Basic username (blank password); OAuth 2.0 bearer available
+    via closed program.
+  ref: authentication/range-authentication.yml
+transport:
+  base_url: https://api.range.co/v1
+  scheme: https
+  tls_minimum: TLS1.2
+  content_type: application/json
+serialization:
+  request_format: json
+  dates: ISO8601 UTC
+partial_updates:
+  supported: true
+  detail: PUT operations accept partial resource representations (e.g. update user
+    profile / state, update team relations).
+versioning:
+  style: uri-path
+  current: v1
+  ref: lifecycle/range-lifecycle.yml
+idempotency:
+  supported: false   # No documented Idempotency-Key header or idempotent-retry contract.
+pagination:
+  documented: false  # List endpoints exist (GET /v1/teams, /v1/updates) but no public pagination contract located.
+rate_limit_signaling:
+  documented: false
+error_envelope:
+  documented: false  # No public error-code reference located.
