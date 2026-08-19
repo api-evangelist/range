@@ -2,8 +2,8 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: https://www.range.co/docs/api
-note: No official hosted/remote Range MCP server located. Candidate tool list derived
-  from the documented Range API v1 operations.
+note: No official hosted/remote Range MCP server located. Candidate tool list derived from the documented
+  Range API v1 operations.
 server:
   name: range
   transport: http
@@ -44,3 +44,9 @@ tools:
 - name: record_activity
   description: Record an interaction / activity.
   source_operation: POST /v1/activity
+deployment:
+  mode: none
+  verified: derived
+  tools: 12
+  checked: '2026-08-12'
+  source: catalog MCP census
