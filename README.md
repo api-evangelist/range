@@ -64,6 +64,105 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Range is a company surfaced as a portfolio company of bloomberg-beta, scale-venture-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Range is team-communication and collaboration software from Range Labs that centralizes how teams stay in sync. It replaces status meetings with asynchronous daily check-ins, runs meetings with shared agendas and notes, tracks OKRs and goals against daily work, and provides a team directory, connecting to 75+ workplace tools including Slack, Microsoft Teams, Zoom, GitHub, Jira, Asana, and Google Workspace. Range publishes a JSON-over-REST API (base https://api.range.co/v1) for managing Teams, Users, and Check-ins (Updates), authenticated with API keys over HTTP Basic or OAuth 2.0 bearer tokens, plus an official Node.js SDK (range-sdk). It is backed by Bloomberg Beta and Scale Venture Partners.
 
-Backed by: bloomberg-beta, scale-venture-partners — https://www.range.co/
+**Areas:** Company · Team Collaboration · Async Communication · Standups · Check-in · Meetings · Goals · OKRs · Productivity · Workplace
+
+## Range on APIs.io
+
+Everything profiled for Range is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/range/](https://apis.io/providers/range/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Range API](https://apis.io/apis/range/range-api/) — JSON-over-REST API for managing Range Teams, Users, and Check-ins (Updates). API-key (HTTP Basic) or OAuth 2.0 bearer authentication; HTTPS/TLS 1.2+ required.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [range](https://apis.io/servers/range/range/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Range Authentication](https://apis.io/security/range/range-authentication/)
+- [Range Domain Security](https://apis.io/security/range/range-domain-security/)
+- [Range Trust Center](https://apis.io/security/range/range-trust-center/)
+- [Range Vulnerability Disclosure](https://apis.io/security/range/range-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.range.co/)
+- [Documentation](https://www.range.co/docs/api)
+- [Getting started](https://www.range.co/docs/api)
+- [API reference](https://www.range.co/docs/api)
+- [Pricing](https://www.range.co/pricing)
+- [Sign up](https://range.co/signup)
+- [Support](https://www.range.co/help)
+- [Blog](https://www.range.co/blog)
+- [Security](https://policy.range.co/disclosure.html)
+- [Compliance](https://www.range.co/security)
+- [Terms of service](https://policy.range.co/)
+- [Privacy policy](https://policy.range.co/)
+- [GitHub](https://github.com/range-labs)
+- [Status](https://range.statuspage.io/)
+
+## API Evangelist rating
+
+**Kin Score 38.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 53.9 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/range/](https://apis.io/providers/range/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Range: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/range/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
